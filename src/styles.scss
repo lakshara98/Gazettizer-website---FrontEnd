@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+.row{
+    margin-right: 0 !important;
+}
+.column{
+    margin-bottom: 0 !important;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2) !important;
+    transition: .3s !important;
+    border-radius: 5px !important;
+}
+
+.signup-form .fa-check {
+    left: 17px !important;
+    top: 15px !important;
+    font-size: 8px !important;
+    position: absolute !important;
+    
+}
+
+.logo {
+    vertical-align: middle !important;
+    border-style: none;
+}
+
+.custom-add-on{
+    padding: 6px 12px;
+    //  font-size: 14px;
+    //  font-weight: 400;
+    // line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    /* border: 1px solid #ccc; */
+    border-radius: 4px;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}

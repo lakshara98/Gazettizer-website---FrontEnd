@@ -1,0 +1,138 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">Search For Gazettes..</div>
+      <div class="card bg-light text-dark">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-12">
+              <form #inputForm="ngForm">
+                <div class="row justify-content-md-center">
+
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="section">Section:</label>
+                      <select #sectionRef required class="form-control" id="Scope" name="Scope"
+                        placeholder="Choose a section" [(ngModel)]="Scope">
+                        {{sectionRef.className}}
+                        <option [value]="'0'">Pharmaceuticals</option>
+                        <option [value]="'1'">Land</option>
+                        <option [value]="'2'">Railway Disposals</option>
+                        <option [value]="'3'">Railway Bolts & Nuts</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <!-- <div class="row ml-2">
+                    <div class="col-3">
+                      <input class="form-check-input" type="radio" name="gazetteSection" [value]="'pharmaceuticals'"
+                        [(ngModel)]="radioButton">
+                      <label for="form-check-label">Pharmaceuticals</label>
+                    </div>
+                    <div class="col-3">
+                      <input class="form-check-input" type="radio" name="gazetteSection" [value]="'land'"
+                        [(ngModel)]="radioButton">
+                      <label for="form-check-label">Land</label>
+                    </div>
+                    <div class="col-3">
+                      <input class="form-check-input" type="radio" name="gazetteSection" [value]="'railway_dis'"
+                        [(ngModel)]="radioButton">
+                      <label for="form-check-label">Railway Disposals</label>
+                    </div>
+                    <div class="col-3">
+                      <input class="form-check-input" type="radio" name="gazetteSection" [value]="'railway_bn'"
+                        [(ngModel)]="radioButton">
+                      <label for="form-check-label">Railway Bolts & Nuts</label>
+                    </div>
+                  </div>
+
+                  <div *ngIf="radioButton == 'pharmaceuticals'">
+                      <div class="col-md-4">
+                          <div class="form-group">
+                            <select #pharmSectionRef required class="form-control" id="pharmSection" name="pharmSection"
+                              placeholder="Choose a section" [(ngModel)]="selectSectionPharm">
+                              {{pharmSectionRef.className}}
+                              <option [value]="'2019-01-04'">2019-01-04</option>
+                              <option [value]="'2019-01-18'">2019-01-18</option>
+                              <option [value]="'2019-01-25'">2019-01-25</option>
+                              <option [value]="'2019-02-01'">2019-02-01</option>
+                              <option [value]="'2019-02-08'">2019-02-08</option>
+                              <option [value]="'2019-02-15'">2019-02-15</option>
+                              <option [value]="'2019-02-22'">2019-02-22</option>
+                              <option [value]="'2019-03-01'">2019-03-01</option>
+                              <option [value]="'2019-03-08'">2019-03-08</option>
+                              <option [value]="'2019-03-22'">2019-03-22</option>
+                              <option [value]="'2019-03-29'">2019-03-29</option>
+                              <option [value]="'2019-04-05'">2019-04-05</option>
+                              <option [value]="'2019-04-12'">2019-04-12</option>
+                            </select>
+                          </div>
+                        </div>
+                  </div>
+
+                  <div *ngIf="radioButton == 'land'">
+                      <div class="col-md-4">
+                          <div class="form-group">
+                            <select #landSectionRef required class="form-control" id="landSection" name="landSection"
+                              placeholder="Choose a section" [(ngModel)]="selectSectionLand">
+                              {{landSectionRef.className}}
+                              <option [value]="'2019-01-25'">2019-01-25</option>
+                              <option [value]="'2019-02-08'">2019-02-08</option>
+                              <option [value]="'2019-03-01'">2019-03-01</option>
+                              <option [value]="'2019-03-29'">2019-03-29</option>
+                            </select>
+                          </div>
+                        </div>
+                  </div>
+
+                  <div *ngIf="radioButton == 'railway_dis'">
+                      <div class="col-md-4">
+                          <div class="form-group">
+                            <select #railDisSectionRef required class="form-control" id="railDisSection" name="railDisSection"
+                              placeholder="Choose a section" [(ngModel)]="selectSectionRailDis">
+                              {{railDisSectionRef.className}}
+                              <option [value]="'2019-01-04'">2019-01-04</option>
+                              <option [value]="'2019-04-05'">2019-04-05</option>
+                          </div>
+                        </div>
+                  </div>
+
+                  <div *ngIf="radioButton == 'railway_bn'">
+                      <div class="col-md-4">
+                          <div class="form-group">
+                            <select #railBnSectionRef required class="form-control" id="railBnSection" name="railBnSection"
+                              placeholder="Choose a section" [(ngModel)]="selectSectionRailBn">
+                              {{railBnSectionRef.className}}
+                              <option [value]="'railways_nut'">not sure </option>
+                          </div>
+                        </div>
+                  </div> -->
+
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label>Date:</label>
+                      <select #dateRef required class="form-control" id="Date" name="Date"
+                        placeholder="Choose a date" [(ngModel)]="Date">
+                        {{dateRef.className}}
+                        <option [value]="'0'">Pharmaceuticals</option>
+                        <option [value]="'1'">Land</option>
+                        <option [value]="'2'">Railway Disposals</option>
+                        <option [value]="'3'">Railway Bolts & Nuts</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-1 align-self-end">
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-success"
+                        (click)="loadGazette(inputForm.value)">Search</button>
+                    </div>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
